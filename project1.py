@@ -1,10 +1,7 @@
 import streamlit as st
 import pickle
-import os
 from sklearn.feature_extraction.text import CountVectorizer
 
-# Display the logo and title
-try:
     st.image('innomatics-footer-logo.webp')
     st.title("E-mail Spam or Ham Classification")
     st.image('spamorhamclassification.jpg')
@@ -28,6 +25,4 @@ try:
         elif result == "ham":
             st.image('hammmm.png')
 
-except Exception as e:
-    st.error(f"An error occurred: {e}")
-    st.write(os.listdir('.'))  # List directory contents for debugging
+
