@@ -6,7 +6,7 @@ st.image(r'innomatics-footer-logo.webp')
 st.title("E-mail Spam or Ham Classification")
 st.image(r"spamorhamclassification.jpg")
 model=pickle.load(open(r"nb.pkl",'rb'))
-Vectorizer=pickle.load(open(r'count_vectorizer.pkl", 'rb'))
+Vectorizer=pickle.load(open(r'count_vectorizer.pkl', 'rb'))
 
 Message=st.text_input("Enter the mail")
 if Message:
